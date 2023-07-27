@@ -14,7 +14,7 @@ export default function TodoWrapper() {
   const deleteTask = (id) => {
     let newArr1 = task.filter((task)=>
     {
-      return id != task.id;
+      return id !== task.id;
     });
 
     setTask(newArr1);
